@@ -123,6 +123,7 @@ ul li a:hover{
     background: aqua;
     display: none;
     z-index: 5;
+    transition: ease-in-out .5s;
 }
 .hamburger::before,
 .hamburger::after{
@@ -134,24 +135,22 @@ ul li a:hover{
 }
 .hamburger::before{
     transform: translateY(.7rem);
+    transition: ease-in-out .5s;
 }
 .hamburger::after{
     transform: translateY(-.7rem);
     width: 40px;
-    
+    transition: ease-in-out .5s;
 }
 .hamburger.animate{
-    transition: ease-in-out .5s;
     /* transform: translateX(-30px); */
     background: transparent;
 }
 .hamburger.animate::before{
-    transition: ease-in-out .5s;
     transform: rotate(45deg);
     width: 40px;
 }
 .hamburger.animate::after{
-    transition: ease-in-out .5s;
     transform: rotate(-45deg) 
 }
 .side-bar{
